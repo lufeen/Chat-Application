@@ -8,9 +8,9 @@ stage('SCM') {
   //mvn package
   sh 'mvn package'
   }
-  stage ('archival') {
+  stage ('archivel') {
   //archiving artifacts
-   archive 'target/*.jar'
+   archiveArtifacts 'target/*.jar'
    }
  }
  
